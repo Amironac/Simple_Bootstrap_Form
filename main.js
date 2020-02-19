@@ -1,4 +1,4 @@
-const submit_reg_button = document.getElementById("reg-button").addEventListener("click", registerMe)
+const submit_reg_button = document.getElementById("reg-button").addEventListener("click", registerMe);
 const close_alert_button = document.getElementById("close-alert").addEventListener("click", closeAlert);
 
 
@@ -40,7 +40,7 @@ function registerMe(e) {
 
             }
             document.getElementById("warning-messegge").innerHTML = "Enter username please";
-            prog.style.width = "25%"
+            prog.style.width = "25%";
 
         } else if (mail.length < 1) {
 
@@ -50,7 +50,7 @@ function registerMe(e) {
             }
             document.getElementById("warning-messegge").innerHTML = "Enter email please";
 
-            prog.style.width = "45%"
+            prog.style.width = "45%";
 
 
         } else if (pword.length < 1) {
@@ -62,7 +62,7 @@ function registerMe(e) {
                 document.getElementById("warning-messegge").innerHTML = "Passwords do not match";
 
             }
-            prog.style.width = "60%"
+            prog.style.width = "60%";
 
         } else if (counter < 1) {
             while (counter < 1) {
@@ -91,7 +91,7 @@ function registerMe(e) {
                 }
                 break
             }
-            prog.style.width = "75%"
+            prog.style.width = "75%";
         }
         if (counter >= 1) {
             cont.innerHTML = " <h1 style='padding-bottom:43%;'> You are successfully signed in ! </h1> ";
@@ -99,7 +99,7 @@ function registerMe(e) {
                 aler.style.visibility = "hidden";
 
             }
-            prog.style.width = "100%"
+            prog.style.width = "100%";
         }
     }
 }
