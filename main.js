@@ -74,7 +74,7 @@ function registerMe(e) {
                         if (pass[i] == symbols[j]) {
                             counter += 1
                             console.log("Its a match");
-                            yes = true
+                           
                         }
 
                     }
@@ -89,9 +89,7 @@ function registerMe(e) {
                         break
                     }
                 }
-
                 break
-
             }
             prog.style.width = "75%"
         }
