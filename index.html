@@ -24,7 +24,30 @@
           
            
         }
-
+        @media (max-width: 800px){
+            .content{
+                width:80vw;
+                display:flex;
+                flex-direction: column;
+                z-index:1;
+                padding:0;
+            }
+            #form{
+                width:100%;
+                margin-left:8%;
+                padding:2%;
+            }
+            .alert{
+                width:400px;
+                left:5%;
+            }
+            .site-messegge{
+                font-size:10px;
+                margin-top: 25%;
+                padding:10%;
+                margin-bottom: 20%;
+            }
+        }
         
     </style>
 </head>
@@ -46,14 +69,14 @@
 
     <div class="container content text-center bg-light border p-5" style="display:flex;z-index:1;">
 
-        <form class="col-sm-4 bg-light text-dark ml-5 text-center p-4"
-            style="border:1px solid gainsboro;border-radius:3px;">
+        <form class="col-sm-4 bg-light text-dark  text-center "id="form"
+            style="border:1px solid gainsboro;border-radius:3px;margin-left:1%;padding:2%; margin-bottom:10%;">
             <div class="form-group text-left">
                 <label class="col-form-label" for="username">Username</label>
                 <input type="text" class="form-control" placeholder="Enter username" id="username">
             </div>
 
-            <div class="form-group text-left">
+            <div class="form-group text-left" >
                 <label for="mail">Email address</label>
                 <input type="email" class="form-control" id="email-address" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
@@ -72,12 +95,12 @@
 
 
         </form>
-        <div class="container col-sm-6 text-center mr-4 bg-secondary border" style="border-radius:3px;">
+        <div class="container col-sm-6 text-center bg-secondary border" style="border-radius:3px;margin-right:0%;">
 
             <h1>Please fill out the form.</h1>
 
 
-            <div class="container text-center col-sm-5 mt-5 pt-5">
+            <div class="container site-messegge text-center col-sm-5">
                 <div>
                     <i class="fas fa-code fa-10x" alt="logo"></i>
                 </div>
@@ -87,7 +110,7 @@
         </div>
 
     </div>  
-    <div class="progress mt-4">
+    <div class="progress">
         <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
 
